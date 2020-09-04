@@ -1,1 +1,38 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 2000px;
+	--headersize: 60px;
+}
 
+.header {
+	--headersize: 80px;
+	width: 100%;
+	transition: --headersize 0.5s;
+	height: var(--headersize);
+	top: 0px;
+	background-color: #409fe3;
+	position: fixed;
+}
+
+.header:hover {
+--headersize: 60px;
+}
+
+.header h1 {
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	position: relative;
+	top: 30%;
+	user-select: none;
+}
+
+
+
+.welcome {
+    padding-top: 100px;
+    padding-left: 25px;
+    margin: 0px;
+}
