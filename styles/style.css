@@ -8,7 +8,6 @@ body {
 .header {
 	--headersize: 80px;
 	width: 100%;
-	transition: --headersize 0.5s;
 	height: var(--headersize);
 	top: 0px;
 	background-color: #409fe3;
@@ -17,6 +16,12 @@ body {
 
 .header:hover {
 --headersize: 60px;
+transition: all 0.25s ease-in-out;
+}
+
+.header:not(:hover) {
+--headersize: 80px;
+transition: all 0.25s ease-in-out;
 }
 
 .header h1 {
